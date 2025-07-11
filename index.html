@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Grazy's Calculator</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
   <h1>Calculator</h1>
+  <div class="display">
+    <input type="text" id="display-screen" disabled>
+    <div class="calculator-buttons">
+      <button id="btn-delete">C</button>
+      <button>&lt;</button>
+      <button>√</button>
+      <button>÷</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>X</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>-</button>
+      
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>+</button>
+
+      <button id="btn-zero">0</button>
+      <button>.</button>
+      <button id="btn-result">=</button>
+    </div>
+  </div>
 </body>
 </html>
