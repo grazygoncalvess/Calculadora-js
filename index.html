@@ -16,30 +16,31 @@
   <div class="display">
     <input type="text" id="display-screen" disabled>
     <div class="calculator-buttons">
-      <button id="btn-delete">C</button>
-      <button>&lt;</button>
-      <button>√</button>
-      <button>÷</button>
+      <button onclick="cleanDisplay()" id="btn-delete">C</button>
+      <button onclick="backspace()" id="btn-backspace">&lt;</button>
+      <button onclick="insertToDisplay('√')">√</button>
+      <button onclick="insertToDisplay('/')">/</button>
 
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
-      <button>X</button>
+      <button onclick="insertToDisplay('7')">7</button>
+      <button onclick="insertToDisplay('8')">8</button>
+      <button onclick="insertToDisplay('9')">9</button>
+      <button onclick="insertToDisplay('*')">*</button>
 
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
-      <button>-</button>
+      <button onclick="insertToDisplay('4')">4</button>
+      <button onclick="insertToDisplay('5')">5</button>
+      <button onclick="insertToDisplay('6')">6</button>
+      <button onclick="insertToDisplay('-')">-</button>
       
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>+</button>
+      <button onclick="insertToDisplay('1')">1</button>
+      <button onclick="insertToDisplay('2')">2</button>
+      <button onclick="insertToDisplay('3')">3</button>
+      <button onclick="insertToDisplay('+')">+</button>
 
-      <button id="btn-zero">0</button>
-      <button>.</button>
-      <button id="btn-result">=</button>
+      <button id="btn-zero" onclick="insertToDisplay('0')">0</button>
+      <button onclick="insertToDisplay('.')">.</button>
+      <button id="btn-result" onclick="calc()">=</button>
     </div>
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>
